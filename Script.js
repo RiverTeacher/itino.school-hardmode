@@ -102,7 +102,7 @@ window.onload = function () {
 				zoyamaImg.y = 200 + Math.sin(zoyamaImg.x / 70) * 100; // ｙ座標を振幅100pxのサイン波で移動(Sinは便利なので慣れとくといいよ！)
 			}
 			if (state == 4) {							//状態４（point９以上から）　4は初期セット状態（state=4）と移動状態（state=4.1)の2つに状態をわける		
-				zoyamaImg.y = Math.random() * 200;			//ｙ座標の位置をランダムに決定
+				zoyamaImg.y = Math.random() * 100;			//ｙ座標の位置をランダムに決定
 				state = 4.1;
 			}
 			if (state == 4.1) {							//状態４．１ 移動状態
