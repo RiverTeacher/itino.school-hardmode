@@ -98,7 +98,7 @@ window.onload = function () {
 				zoyamaImg.x += 30;
 			}
 			if (state == 3) {							//状態３（point６以上から）
-				zoyamaImg.x += 10;
+				zoyamaImg.x += 30;
 				zoyamaImg.y = 80 + Math.sin(zoyamaImg.x / 70) * 100; // ｙ座標を振幅100pxのサイン波で移動(Sinは便利なので慣れとくといいよ！)
 			}
 			if (state == 4) {							//状態４（point９以上から）　4は初期セット状態（state=4）と移動状態（state=4.1)の2つに状態をわける		
