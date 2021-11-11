@@ -72,7 +72,7 @@ window.onload = function () {
 				state = 2;
 			} else if (point < 9) {
 				state = 3;
-			} else if (point < 15) {
+			} else if (point < 10) {
 				state = 4;
 			} else {
 				state = 5;
@@ -98,8 +98,8 @@ window.onload = function () {
 				zoyamaImg.x += 30;
 			}
 			if (state == 3) {							//状態３（point６以上から）
-				zoyamaImg.x += 20;
-				zoyamaImg.y = 100 + Math.sin(zoyamaImg.x / 70) * 100; // ｙ座標を振幅100pxのサイン波で移動(Sinは便利なので慣れとくといいよ！)
+				zoyamaImg.x += 10;
+				zoyamaImg.y = 80 + Math.sin(zoyamaImg.x / 70) * 100; // ｙ座標を振幅100pxのサイン波で移動(Sinは便利なので慣れとくといいよ！)
 			}
 			if (state == 4) {							//状態４（point９以上から）　4は初期セット状態（state=4）と移動状態（state=4.1)の2つに状態をわける		
 				zoyamaImg.y = Math.random() * 200;			//ｙ座標の位置をランダムに決定
